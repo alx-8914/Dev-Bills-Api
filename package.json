@@ -1,0 +1,36 @@
+{
+  "name": "devbills-api",
+  "version": "1.0.0",
+  "description": "Devbills - Controle de finanças",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "build": "tsc",
+    "start": "node ./build/src/server.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Alexsandro da Silva",
+    "email": "alexdevsilva@gmail.com",
+    "url": "https://github.com/alx-8914"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "compose": "^0.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "esbuild-wasm": "^0.24.2",
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.9.3",
+    "zod": "^3.24.1"
+  }
+}
