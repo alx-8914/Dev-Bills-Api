@@ -12,10 +12,7 @@ export async function setupMongo(): Promise<void> {
     
 
     // Escolhe a URL correta com base no ambiente
-    const mongoUri =
-      process.env.MONGO_URL === 'production'
-        ? process.env.MONGO_URL
-        : process.env.MONGO_LOCAL_URL;
+    const mongoUri = process.env.MONGO_URL;
 
     if (!mongoUri) {
       throw new Error('❌ MongoDB connection string is missing.');
