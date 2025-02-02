@@ -14,7 +14,7 @@ export async function setupMongo(): Promise<void> {
     // Escolhe a URL correta com base no ambiente
     const mongoUrl =
       process.env.NODE_ENV === 'production'
-        ? process.env.MONGO_ATLAS_URL
+        ? process.env.MONGO_URL
         : process.env.MONGO_LOCAL_URL;
 
     if (!mongoUrl) {
