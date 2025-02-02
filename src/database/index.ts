@@ -1,4 +1,7 @@
 import mongoose from 'mongoose';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export async function setupMongo(): Promise<void> {
   try {
@@ -6,6 +9,7 @@ export async function setupMongo(): Promise<void> {
       console.log('✅ DB already connected.');
       return;
     }
+    
 
     // Escolhe a URL correta com base no ambiente
     const mongoUrl =
