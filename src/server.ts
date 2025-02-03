@@ -11,13 +11,7 @@ dotenv.config();
 setupMongo().then(() => {
   const app = express();
 
-  app.use(cors(
-    {
-      origin: [
-        'https://controles-financeiros-devbills.netlify.app'
-      ]
-    }
-  ));
+  app.use(cors());
   app.use(json());
   app.use(routes);
 
